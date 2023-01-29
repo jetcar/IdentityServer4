@@ -21,7 +21,7 @@ using Microsoft.AspNetCore.Authentication;
 
 namespace IdentityServer4.Validation
 {
-    internal class TokenRequestValidator : ITokenRequestValidator
+    public class TokenRequestValidator : ITokenRequestValidator
     {
         private readonly IdentityServerOptions _options;
         private readonly IAuthorizationCodeStore _authorizationCodeStore;

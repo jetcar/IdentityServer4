@@ -117,7 +117,7 @@ namespace IdentityServer.UnitTests.Services.Default
                 new ConsentResponse() { ScopesValuesConsented = new[] { "openid" } }, 
                 null);
 
-            act.Should().Throw<ArgumentNullException>()
+            act.Should().ThrowAsync<ArgumentNullException>().Result
                 .And.Message.Should().Contain("subject");
         }
 

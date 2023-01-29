@@ -16,7 +16,7 @@ using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Validation
 {
-    internal class DeviceAuthorizationRequestValidator : IDeviceAuthorizationRequestValidator
+    public class DeviceAuthorizationRequestValidator : IDeviceAuthorizationRequestValidator
     {
         private readonly IdentityServerOptions _options;
         private readonly IResourceValidator _resourceValidator;

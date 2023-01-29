@@ -75,7 +75,7 @@ namespace IdentityServer4.Validation
         /// <summary>
         /// Instantiates an instance of private_key_jwt secret validator (used for testing)
         /// </summary>
-        internal JwtRequestValidator(string audience, ILogger<JwtRequestValidator> logger)
+        public JwtRequestValidator(string audience, ILogger<JwtRequestValidator> logger)
         {
             _audienceUri = audience;
             Logger = logger;
@@ -177,7 +177,7 @@ namespace IdentityServer4.Validation
 
             if (Options.StrictJarValidation)
             {
-                tokenValidationParameters.ValidTypes = new[] { JwtClaimTypes.JwtTypes.AuthorizationRequest };
+                //tokenValidationParameters.ValidTypes = new[] { JwtClaimTypes.JwtTypes.AuthorizationRequest };
             }
 
             Handler.ValidateToken(jwtTokenString, tokenValidationParameters, out var token);
