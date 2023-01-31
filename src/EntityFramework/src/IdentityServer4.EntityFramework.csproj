@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<PackageId>MyIdentityServer4.EntityFrameworkCore</PackageId>
+		<PackageId>IdentityServer4Core.EntityFramework</PackageId>
 		<TargetFramework>net7.0</TargetFramework>
 
 		<Description>EntityFramework persistence layer for IdentityServer4</Description>
@@ -9,8 +9,8 @@
 		<AssemblyName>IdentityServer4.EntityFramework</AssemblyName>
 		<PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;EntityFramework</PackageTags>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<OutputPath>publish</OutputPath>
-		<BaseOutputPath>publish</BaseOutputPath>
+		<OutputPath>../../../publish</OutputPath>
+		<BaseOutputPath>../../../publish</BaseOutputPath>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageProjectUrl>https://github.com/jetcar/IdentityServer4</PackageProjectUrl>
@@ -27,10 +27,8 @@
 
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\..\IdentityModel\src\IdentityModel.csproj" />
 		<ProjectReference Include="..\..\EntityFramework.Storage\src\IdentityServer4.EntityFramework.Storage.csproj" />
 		<ProjectReference Include="..\..\IdentityServer4\src\IdentityServer4.csproj" />
-		<ProjectReference Include="..\..\Storage\src\IdentityServer4.Storage.csproj" />
 	</ItemGroup>
 
 

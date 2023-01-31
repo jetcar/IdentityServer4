@@ -400,7 +400,7 @@ namespace IdentityServer.IntegrationTests.Endpoints.Authorize
             var requestJwt = CreateRequestJwt(
                 issuer: _client.ClientId,
                 audience: IdentityServerPipeline.BaseUrl,
-                credential: new SigningCredentials(_rsaKey, "RS256"),
+                credential: null,
                 claims: new[] {
                     new Claim("client_id", _client.ClientId),
                     new Claim("response_type", "id_token"),

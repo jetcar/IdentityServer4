@@ -4,14 +4,15 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<Description>OpenID Connect and OAuth 2.0 Framework for ASP.NET Core</Description>
 		<AssemblyName>IdentityServer4</AssemblyName>
-		<OutputPath>publish</OutputPath>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<BaseOutputPath>publish</BaseOutputPath>
+		<OutputPath>../../../publish</OutputPath>
+		<BaseOutputPath>../../../publish</BaseOutputPath>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/jetcar/IdentityServer4</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/jetcar/IdentityServer4</RepositoryUrl>
 		<PackageId>IdentityServer4Core</PackageId>
+		<Version>1.0.2</Version>
 
 	</PropertyGroup>
 
@@ -35,7 +36,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\..\IdentityModel\src\IdentityModel.csproj" />
-		<ProjectReference Include="..\..\EntityFramework.Storage\src\IdentityServer4.EntityFramework.Storage.csproj" />
 		<ProjectReference Include="..\..\Storage\src\IdentityServer4.Storage.csproj" />
 	</ItemGroup>
 

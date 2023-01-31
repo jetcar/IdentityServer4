@@ -3,14 +3,14 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 
-		<PackageId>MyIdentityServer4.StorageCore</PackageId>
+		<PackageId>IdentityServer4Core.Storage</PackageId>
 		<Description>Storage interfaces and models for IdentityServer4</Description>
 		<Authors>Brock Allen;Dominick Baier</Authors>
 
 		<PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer</PackageTags>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<OutputPath>publish</OutputPath>
-		<BaseOutputPath>publish</BaseOutputPath>
+		<OutputPath>../../../publish</OutputPath>
+		<BaseOutputPath>../../../publish</BaseOutputPath>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageProjectUrl>https://github.com/jetcar/IdentityServer4</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
